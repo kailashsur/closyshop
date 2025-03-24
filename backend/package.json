@@ -7,7 +7,7 @@
     "start": "node server.js",
     "server": "nodemon server.js"
   },
-  "author": "",
+  "author": "Kailash Chandra Sur",
   "license": "ISC",
   "description": "",
   "dependencies": {
