@@ -17,7 +17,7 @@ const Add = ({token}) => {
    const [category, setCategory] = useState("Men");
    const [subCategory, setSubCategory] = useState("Topwear");
    const [bestseller, setBestseller] = useState(false);
-   const [sizes, setSizes] = useState([]);
+   const [sizes, setSizes] = useState(["FreeSize"]);
 
    const onSubmitHandler = async (e) => {
     e.preventDefault();
@@ -125,6 +125,10 @@ const Add = ({token}) => {
         <div>
           <p className='mb-2'>Product Sizes</p>
           <div className='flex gap-3'>
+          <div onClick={()=>setSizes(prev => prev.includes("FreeSize") ? prev.filter( item => item !== "FreeSize") : [...prev,"FreeSize"])}>
+  <p className={`${sizes.includes("FreeSize") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>FreeSize</p>
+</div>
+
             <div onClick={()=>setSizes(prev => prev.includes("S") ? prev.filter( item => item !== "S") : [...prev,"S"])}>
               <p className={`${sizes.includes("S") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>S</p>
             </div>
