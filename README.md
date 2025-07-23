@@ -1,9 +1,5 @@
 # Closy - E-commerce Platform
 
-![Closy Logo](https://via.placeholder.com/150) <!-- Replace with actual logo URL if available -->
-
-**Closy** is a modern, full-stack e-commerce platform built to deliver a seamless shopping experience for users and efficient management tools for administrators. With a responsive frontend, secure backend, and integrated payment gateways, Closy is designed for scalability and ease of use.
-
 ---
 
 ## Features
